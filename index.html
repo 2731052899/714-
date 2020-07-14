@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc {
+            width: 300px;
+            height: 300px;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        window.onload = function () {
+            var link = document.querySelector("a");
+            link.href = "http://baidu.com";
+            link.img = document.getElementsByTagName("img")[0];
+            link.img.src = "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=168182471,455056764&fm=26&gp=0.jpg"
+        }
+        window.onload = function () {
+            var div = document.querySelector(".abc");
+            console.log(getComputedStyle(div).width);
+           div.style.width = "500px";
+           
+        }
+        
+    </script>
+    <a href="www.uek.com">aa </a>
+    <img src="./timg.jfif" alt="">
+    <div class="abc">
+
+    </div>
+</body>
+
+</html>
